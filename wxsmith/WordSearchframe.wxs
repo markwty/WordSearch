@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="WordSearchFrame">
+		<size>1336,742</size>
+		<object class="wxRichTextCtrl" name="ID_WORDSRICHTEXTCTRL" variable="WordsRichTextCtrl" member="yes">
+			<pos>832,160</pos>
+			<size>280,272</size>
+		</object>
+		<object class="wxCheckBox" name="ID_LEFTRIGHTCHECKBOX" variable="LeftRightCheckBox" member="yes">
+			<label>Left-Right</label>
+			<checked>1</checked>
+			<pos>832,8</pos>
+		</object>
+		<object class="wxButton" name="ID_GENERATEBTN" variable="GenerateBtn" member="yes">
+			<label>Generate</label>
+			<pos>840,488</pos>
+			<handler function="OnGenerateBtnClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxCheckBox" name="ID_TOPBOTTOMCHECKBOX" variable="TopBottomCheckBox" member="yes">
+			<label>Top-Bottom</label>
+			<checked>1</checked>
+			<pos>832,56</pos>
+		</object>
+		<object class="wxCheckBox" name="ID_TOPLEFTBOTTOMRIGHTCHECKBOX" variable="TopLeftBottomRightCheckBox" member="yes">
+			<label>Top left-Bottom right</label>
+			<checked>1</checked>
+			<pos>832,32</pos>
+		</object>
+		<object class="wxStaticText" name="ID_WORDSLBL" variable="WordsLbl" member="yes">
+			<label>List of words</label>
+			<pos>832,136</pos>
+		</object>
+		<object class="wxCheckBox" name="ID_TOPRIGHTBOTTOMLEFTCHECKBOX" variable="TopRightBottomLeftCheckBox" member="yes">
+			<label>Top right-Bottom left</label>
+			<checked>1</checked>
+			<pos>832,80</pos>
+		</object>
+		<object class="wxCheckBox" name="ID_RIGHTLEFTCHECKBOX" variable="RightLeftCheckBox" member="yes">
+			<label>Right-Left</label>
+			<checked>1</checked>
+			<pos>832,104</pos>
+		</object>
+		<object class="wxCheckBox" name="ID_BOTTOMRIGHTTOPLEFTCHECKBOX" variable="BottomRightTopLeftCheckBox" member="yes">
+			<label>Bottom right-Top left</label>
+			<checked>1</checked>
+			<pos>944,56</pos>
+		</object>
+		<object class="wxPanel" name="ID_GRIDPANEL" variable="GridPanel" member="yes">
+			<pos>0,0</pos>
+			<size>824,700</size>
+			<object class="wxGrid" name="ID_SEARCHGRID" variable="SearchGrid" member="yes">
+				<cols>5</cols>
+				<rows>5</rows>
+				<readonly>1</readonly>
+				<labelrowheight>1</labelrowheight>
+				<labelcolwidth>1</labelcolwidth>
+				<defaultrowsize>40</defaultrowsize>
+				<defaultcolsize>40</defaultcolsize>
+				<pos>0,0</pos>
+				<size>824,700</size>
+				<style>wxBORDER_RAISED</style>
+			</object>
+		</object>
+		<object class="wxCheckListBox" name="ID_WORDSCHECKLISTBOX" variable="WordsCheckListBox" member="yes">
+			<pos>1120,0</pos>
+			<size>216,700</size>
+			<handler function="OnWordsCheckListBoxToggled" entry="EVT_CHECKLISTBOX" />
+		</object>
+		<object class="wxTextCtrl" name="ID_SIZEFACTORTEXTCTRL" variable="SizeFactorTextCtrl" member="yes">
+			<value>1</value>
+			<pos>920,448</pos>
+			<size>176,22</size>
+		</object>
+		<object class="wxStaticText" name="ID_SIZEFACTORLBL" variable="SizeFactorLbl" member="yes">
+			<label>Size Factor</label>
+			<pos>840,448</pos>
+		</object>
+		<object class="wxButton" name="ID_REVEALBTN" variable="RevealBtn" member="yes">
+			<label>Show/hide all answers</label>
+			<pos>840,528</pos>
+			<handler function="OnRevealBtnClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxCheckBox" name="ID_BOTTOMTOPCHECKBOX" variable="BottomTopCheckBox" member="yes">
+			<label>Bottom-Top</label>
+			<checked>1</checked>
+			<pos>1000,80</pos>
+		</object>
+		<object class="wxCheckBox" name="ID_BOTTOMLEFTTOPRIGHTCHECKBOX" variable="BottomLeftTopRightCheckBox" member="yes">
+			<label>Bottom left-Top right</label>
+			<checked>1</checked>
+			<pos>944,104</pos>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="no">
+			<object class="wxMenu" variable="Menu1" member="no">
+				<label>&amp;File</label>
+				<object class="wxMenuItem" name="idMenuQuit" variable="MenuItem1" member="no">
+					<label>Quit</label>
+					<accel>Alt-F4</accel>
+					<help>Quit the application</help>
+					<handler function="OnQuit" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
+			<fields>1</fields>
+			<widths>-1</widths>
+			<styles>wxSB_NORMAL</styles>
+		</object>
+	</object>
+</wxsmith>
